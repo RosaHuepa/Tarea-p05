@@ -25,7 +25,7 @@
 		}
 
 		/** Crear una tabla que no devuelve un conjunto de resultados */
-		if ( $result = $link->query("SELECT * FROM productos WHERE unidades <= $topen") ) 
+		if ( $result = $link->query("SELECT * FROM productos WHERE unidades <= $tope") ) 
 		{
             /** Se extraen las tuplas obtenidas de la consulta */
 			$row = $result->fetch_all(MYSQLI_ASSOC);
